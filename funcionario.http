@@ -1,0 +1,45 @@
+# FuncionariosPOST 
+POST http://localhost:8000/funcionario
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
+Content-Type: application/json
+
+{
+    "nome" : "Hur Dur Silva",
+    "matricula" : "12345",
+    "cpf" : "01923874656",
+    "telefone" : "49988234567",
+    "grupo" : 1,
+    "senha" : "bolinhas"
+}
+
+###
+GET http://localhost:8000/funcionario/1
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
+
+###
+GET http://localhost:8000/funcionario
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
+
+
+###
+PUT http://localhost:8000/funcionario/1
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
+Content-Type: application/json
+
+{
+    "nome" : "Eduardo XXX",
+    "matricula" : "12345",
+    "cpf" : "01923874656",
+    "telefone" : "49988234567",
+    "grupo" : 1,
+    "senha" : "bolinhas"
+}
+
+###
+DELETE http://localhost:8000/funcionario/1
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey

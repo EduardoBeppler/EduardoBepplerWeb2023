@@ -1,0 +1,45 @@
+# Funcionarios
+POST http://localhost:8000/cliente
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
+Content-Type: application/json
+
+{
+    "nome" : "Eduardo",
+    "cpf" : "01923874656",
+    "telefone" : "49988234567",
+    "compra_fiado" : 1,
+    "dia_fiado": 25,
+    "senha" : "bolinhas"
+}
+
+###
+GET http://localhost:8000/cliente/1
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
+
+###
+GET http://localhost:8000/cliente
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
+
+
+###
+PUT http://localhost:8000/cliente/1
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
+Content-Type: application/json
+
+{
+    "nome" : "Eduardo Cliente da Silva",
+    "cpf" : "01923874656",
+    "telefone" : "49988234567",
+    "compra_fiado" : 1,
+    "dia_fiado": 25,
+    "senha" : "bolinhas"
+}
+
+###
+DELETE http://localhost:8000/cliente/1
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey

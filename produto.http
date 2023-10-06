@@ -1,0 +1,41 @@
+# Funcionarios
+POST http://localhost:8000/produto
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
+Content-Type: application/json
+
+{
+    "nome" : "Mini Pizza",
+    "cpf" : "Pizza Pequena",
+    "foto" : "https://th.bing.com/th/id/OIP.zNsLu3Hwfbi3vsU4SaWBpQHaHa?pid=ImgDet&rs=1",
+    "valor_unitario" : 15.0
+}
+
+###
+GET http://localhost:8000/produto/1
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
+
+###
+GET http://localhost:8000/produto
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
+
+
+###
+PUT http://localhost:8000/produto/1
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
+Content-Type: application/json
+
+{
+    "nome" : "Mini Pizza",
+    "cpf" : "Pizza Pequena (1 pessoa)",
+    "foto" : "https://th.bing.com/th/id/OIP.zNsLu3Hwfbi3vsU4SaWBpQHaHa?pid=ImgDet&rs=1",
+    "valor_unitario" : 15.0
+}
+
+###
+DELETE http://localhost:8000/produto/1
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
